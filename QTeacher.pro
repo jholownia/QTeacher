@@ -13,8 +13,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    database.cpp \
+    qteacher.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    database.h \
+    qteacher.h
 
 FORMS    += mainwindow.ui
