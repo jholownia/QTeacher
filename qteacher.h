@@ -7,7 +7,7 @@ class QTeacher : public QApplication
 {
     Q_OBJECT
 public:
-    explicit QTeacher(QObject *parent = 0);
+    explicit QTeacher(int argc, char* argv[]);
 
 signals:
 

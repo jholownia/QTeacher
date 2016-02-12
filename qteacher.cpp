@@ -1,6 +1,6 @@
 #include "qteacher.h"
 
-QTeacher::QTeacher(QObject *parent) :
-    QApplication(parent)
+QTeacher::QTeacher(int argc, char *argv[]) :
+    QApplication(argc, argv)
 {
 }
