@@ -57,7 +57,7 @@ void Word::setSampleSentence(const QString &sentence)
     m_sample = sentence;
 }
 
-void Word::setSound(QByteArray sound)
+void Word::setPronunciation(QByteArray sound)
 {
     m_sound = sound;
 }

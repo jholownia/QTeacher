@@ -23,7 +23,7 @@ public:
     void setPolish(const QString& word);
     void setMeaning(const QString& meaning);
     void setSampleSentence(const QString& sentence);
-    void setSound(QByteArray sound);
+    void setPronunciation(QByteArray sound);
 
 private:
     QString m_eng;

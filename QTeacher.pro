@@ -21,6 +21,7 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     database.h \
     qteacher.h \
-    word.h
+    word.h \
+    schema.h
 
 FORMS    += mainwindow.ui
