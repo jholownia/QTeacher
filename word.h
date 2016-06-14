@@ -3,6 +3,7 @@
 #ifndef WORD_H
 #define WORD_H
 
+// test
 
 #include <QString>
 #include <QByteArray>
