@@ -16,12 +16,15 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     database.cpp \
     qteacher.cpp \
-    word.cpp
+    word.cpp \
+    dialog.cpp
 
 HEADERS  += mainwindow.h \
     database.h \
     qteacher.h \
     word.h \
-    schema.h
+    schema.h \
+    dialog.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    dialog.ui
