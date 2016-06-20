@@ -6,7 +6,7 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets sql
 
 TARGET = QTeacher
 TEMPLATE = app
@@ -16,15 +16,12 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     database.cpp \
     qteacher.cpp \
-    word.cpp \
-    dialog.cpp
+    word.cpp
 
 HEADERS  += mainwindow.h \
     database.h \
     qteacher.h \
     word.h \
-    schema.h \
-    dialog.h
+    schema.h
 
-FORMS    += mainwindow.ui \
-    dialog.ui
+FORMS    += mainwindow.ui
