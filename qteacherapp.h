@@ -3,11 +3,11 @@
 
 #include <QApplication>
 
-class QTeacher : public QApplication
+class QTeacherApp : public QApplication
 {
     Q_OBJECT
 public:
-    explicit QTeacher(int argc, char* argv[]);
+    explicit QTeacherApp(int argc, char* argv[]);
 
 signals:
 

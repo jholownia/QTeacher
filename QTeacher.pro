@@ -14,14 +14,26 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    database.cpp \
-    qteacher.cpp \
-    word.cpp
+    word.cpp \
+    qteacherapp.cpp \
+    dbcontroller.cpp \
+    userinterface.cpp \
+    wordhelper.cpp \
+    csvreader.cpp \
+    session.cpp
 
 HEADERS  += mainwindow.h \
-    database.h \
-    qteacher.h \
     word.h \
-    schema.h
+    schema.h \
+    qteacherapp.h \
+    dbcontroller.h \
+    userinterface.h \
+    wordhelper.h \
+    csvreader.h \
+    session.h \
+    config.h
 
 FORMS    += mainwindow.ui
+
+DISTFILES += \
+    schema.sql

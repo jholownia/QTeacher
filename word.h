@@ -8,30 +8,26 @@
 #include <QString>
 #include <QByteArray>
 
+// TODO: use QHash map or 2
+
 class Word
 {
 public:
     Word();
-    Word(const QString& english, const QString& polish);
+    Word(const QString& native, const QString& foreign);
 
-    QString getEnglish() const;
-    QString getPolish() const;
-    QString getMeaning() const;
-    QString getSampleSentence() const;
-    QByteArray getSound() const;
+    QString getNative() const;
+    QString getForeign() const;
+    int getConfidence() const;
 
-    void setEnglish(const QString& word);
-    void setPolish(const QString& word);
-    void setMeaning(const QString& meaning);
-    void setSampleSentence(const QString& sentence);
-    void setPronunciation(QByteArray sound);
+    void setNative(const QString& word);
+    void setForeign(const QString& word);
+    void setConfidence(const int confidence);
 
 private:
-    QString m_eng;
-    QString m_pl;
-    QString m_meaning;
-    QString m_sample;
-    QByteArray m_sound;
+    QString m_native;
+    QString m_foreign;
+    int m_confidence;
 };
 
 #endif // WORD_H

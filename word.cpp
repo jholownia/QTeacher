@@ -1,63 +1,45 @@
 #include "word.h"
 
 Word::Word()
+    : m_confidence(0)
 {
 
 }
 
-Word::Word(const QString& english, const QString& polish) :
-    m_eng(english),
-    m_pl(polish)
+Word::Word(const QString &native, const QString &foreign)
+    : m_native(native)
+    , m_foreign(foreign)
+    , m_confidence(0)
 {
 
 }
 
-QString Word::getEnglish() const
+QString Word::getNative() const
 {
-    return m_eng;
+    return m_native;
 }
 
-QString Word::getPolish() const
+QString Word::getForeign() const
 {
-    return m_pl;
+    return m_foreign;
 }
 
-QString Word::getMeaning() const
+int Word::getConfidence() const
 {
-    return m_meaning;
+    return m_confidence;
 }
 
-QString Word::getSampleSentence() const
+void Word::setNative(const QString &word)
 {
-    return m_sample;
+    m_native = word;
 }
 
-QByteArray Word::getSound() const
+void Word::setForeign(const QString &word)
 {
-    return m_sound;
+    m_foreign = word;
 }
 
-void Word::setEnglish(const QString &word)
+void Word::setConfidence(const int confidence)
 {
-    m_eng = word;
-}
-
-void Word::setPolish(const QString &word)
-{
-    m_pl = word;
-}
-
-void Word::setMeaning(const QString &meaning)
-{
-    m_meaning = meaning;
-}
-
-void Word::setSampleSentence(const QString &sentence)
-{
-    m_sample = sentence;
-}
-
-void Word::setPronunciation(QByteArray sound)
-{
-    m_sound = sound;
+    m_confidence = confidence;
 }

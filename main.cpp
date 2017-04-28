@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include <QApplication>
 
-#include "database.h"
+#include "dbcontroller.h"
 
 const QString dbPath = "/Users/jholownia/temp/test.db";
 
